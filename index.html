@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab traingle" data-target="traingle-tab">
+      <h1 class="tab__title">Traingle Tab</h1>
+    </div>
+    <div class="tab path active" data-target="path-tab">
+      <h1 class="tab__title">Path Tab</h1>
+    </div>
+  </div>
+
+  <div class="traingle-tab">
+    <button class="new-traingle-btn btn">New Problem</button>
+    <button class="solution-button btn">Show Solution</button>
+    <div class="wrapper">
+      <div class="traingle-area-border">
+        <div class="traingle-generator">
+          <div class="sides side1">??</div>
+          <div class="sides side2">40</div>
+          <div class="sides side3">50</div>
+          <div class="the-traingle"></div>
+        </div>
+      </div>
+      <div class="solution">
+        <h2>Problem Givens:</h2>
+        <div class="solution-givens">
+          <p> a = <span class="a-value">100</span> </p>
+          <p> b = <span class="b-value">100</span> </p>
+          <p> c = <span class="c-value">??</span> </p>
+        </div>
+        <div class="solution-formula">
+          <h3>Formula:</h3>
+          <p>
+            c = 
+            &#8730;
+            a<sup>2</sup> + b<sup>2</sup>
+          </p>
+        </div>
+        <div class="solution-steps">
+          <h3>Solution:</h3>
+          <p class="solution-process apply-numbers">
+            =
+            &#8730;
+            <span>
+              <span class="setting-a-value">100</span><sup>2</sup>
+              + 
+              <span class="setting-b-value">100</span><sup>2</sup>
+            </span>
+          </p>
+          <p class="solution-process solve-numbers">
+            =
+            &#8730;
+            <span>
+              <span class="solving-a-value">100</span>
+              +
+              <span class="solving-b-value">100</span>
+            </span>
+          </p>
+          <p class="solution-process solve-numbers">
+            =
+            &#8730;
+            <span>
+              <span class="solving-a-plus-b">100</span>
+            </span>
+          </p>
+          <p class="solution-process solve-numbers solution-finished-number">
+            =
+            <span>
+              <span class="solving-sqrt-a-b">100</span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="path-tab active">
+
+    <div class="path-controls">
+      <div class="new-problem-box">
+        <button class="new-problem-button">New Problem</button>
+        <button class="clear-points-btn">Clear Points</button>
+      </div>
+      <div class="submit-answer disabled">
+        <button>Submit Answer</button>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="question-text">
+        <p>Graph the line with the equation</p>
+        <div class="equation">
+          <p class="math-sign-font">y</p>
+          <p class="math-sign-font">=</p>
+          <div class="riseRunLine">
+            <div class="sign-wrapper">
+              <p class="runSign"></p>
+            </div>
+            <div class="fraction">
+              <p class="rise"></p>
+              <p class="line-between"></p>
+              <p class="run"></p>
+            </div>
+          </div>
+          <p class="math-sign-font math-sign-x">x</p>
+          <div class="ySign"></div>
+          <div class="yNumber"></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="grid-boxes">
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>10</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>9</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>8</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>7</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>6</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>5</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>4</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>3</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>2</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-y">
+            <p>1</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid empty">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-10</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-9</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-8</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-7</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-6</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-5</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-4</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-3</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-2</p>
+          </div>
+          <div class="box box-number-minus-x">
+            <div class="point-circle"></div>
+            <p>-1</p>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>1</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>2</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>3</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>4</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>5</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>6</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>7</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>8</p></div>
+          <div class="box box-number-plus-x"><div class="point-circle"></div><p>9</p></div>
+          <div class="box box-number-plus-x"><p>10</p></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-1</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-2</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-3</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-4</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-5</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-6</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-7</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-8</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box box-number-minus-y">
+            <p>-9</p>
+            <div class="point-circle"></div>
+          </div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"><div class="point-circle"></div></div>
+          <div class="box"></div>
+        </div>
+        <div class="grid">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box box-number-minus-y">
+            <p>-10</p>
+          </div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="grid-line-x">
+        <div class="arrow arrow-x-left">&#x21a4;</div>
+        <div class="arrow arrow-x-right">&#x21a6;</div>
+        <div class="line-title-x math-sign-font">x</div>
+      </div>
+      <div class="grid-line-y">
+        <div class="arrow arrow-y-top">&#x21a4;</div>
+        <div class="arrow arrow-y-bottom">&#x21a6;</div>
+        <div class="line-title-y math-sign-font">y</div>
+      </div>
+      <svg class="svg-line-el" id="line" xmlns="http://www.w3.org/2000/svg">
+        <!-- Arrows -->
+        <defs>
+          <!-- Start Arrow -->
+          <marker id="start-arrow" markerWidth="5" markerHeight="5" refX="-1.5" refY="2.5" orient="auto">
+            <path d="M0,2.5 L4.5,0 L4.5,5 Z" fill="#673ab7" />
+          </marker>
+          <!-- End Arrow -->
+          <marker id="end-arrow" markerWidth="5" markerHeight="5" refX="5.5" refY="2.5" orient="auto">
+            <path d="M0,0 L4.5,2.5 L0,5 Z" fill="#673ab7" />
+          </marker>
+        </defs>
+
+        <line id="svg-line" x1="" y1="" x2="" y2="" stroke="black" stroke-width="3" />
+      </svg>
+    </div>
+  
+  </div>
+
+  <div class="popup">
+    <div class="popup-box">
+      <div class="popup-head">
+        <h1 class="popup-solution-title math-sign-font">Step-By-Step Solution</h1>
+        <div class="popup-close-button math-sign-font">Close</div>
+      </div>
+      <div class="popup-body">
+        <div class="popup-equation-wrapper">
+          <div class="popup-equation-title math-sign-font">Equation: </div>
+          <div class="popup-question-equation"></div>
+        </div>
+        <div class="popup-equation-wrapper">
+          <div class="popup-equation-title math-sign-font">Y-Intercept:</div>
+          <div class="popup-solution-step-1 popup-solution-step"></div>
+        </div>
+        <div class="popup-equation-wrapper">
+          <div class="popup-equation-title math-sign-font">Slope:</div>
+          <div class="popup-solution-step-2 popup-solution-step">
+            <p>The slope is</p>
+            <div class="rise-run-line-fraction-wrapper"></div>
+            <p class="rise-run-line-solution-text"></p>
+          </div>
+        </div>
+        <div class="popup-equation-wrapper">
+          <div class="popup-equation-title math-sign-font">Second Point:</div>
+          <div class="popup-solution-step-3 popup-solution-step"></div>
+        </div>
+        <div class="popup-equation-wrapper">
+          <div class="popup-equation-title math-sign-font">Graphing The Line:</div>
+          <div class="popup-solution-step-4 popup-solution-step"></div>
+        </div>
+      </div>
+      <div class="popup-path-representation">
+        <h1 class="popup-solution-title math-sign-font">Line Representation on the Graph</h1>
+        <div class="popup-path-clone"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-result popup-result-wrong-answer">
+    <div class="popup-result-box">
+      <div class="popup-result-content">
+        <img src="imgs/cross.png" class="icon icon-wrong" alt="">
+        <h2>Wrong Answer</h2>
+      </div>
+      <div class="popup-result-buttons">
+        <button class="popup-result-button popup-result-button-sec wrong-answer-show-solution-btn">Show Solution</button>
+        <button class="popup-result-button popup-result-button-main wrong-answer-try-again-btn">Try Again</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-result popup-result-correct-answer">
+    <div class="popup-result-box">
+      <div class="popup-result-content">
+        <img src="imgs/check.png" class="icon icon-correct" alt="">
+        <h2>Correct Answer</h2>
+      </div>
+      <div class="popup-result-buttons">
+        <button class="popup-result-button popup-result-button-sec">Practice on another Topic</button>
+        <button class="popup-result-button popup-result-button-main">New Problem</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
